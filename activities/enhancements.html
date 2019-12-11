@@ -54,7 +54,7 @@
             <pre><code class="lang-markup">&ltdiv class="logo-box"&gt;&lt;img src="http://brothert.net/dryoar/images/dryoarlogo.png" alt="Dry Oar Logo"&gt;&lt/div&gt;</code></pre>
             <p>
               If you check out the link above you will learn that border-radius
-              can accept 1, 2, or 4 arguments. We will use 4 arguments for ours.
+              can accept one, two, or four arguments. We will use four arguments for ours.
               We want the top two corners rounded and the bottom two square.
               Create a rule in your css for the <kbd>.logo-box</kbd> class like
               this:
@@ -68,7 +68,7 @@
             <p>
               This rule will set the top left and top-right corners of our
               logo-box to be rounded (50px radius), but leave the bottom-right
-              and bottom-left corners not rounded (radius 0). Pplay around with
+              and bottom-left corners not rounded (radius 0). Play around with
               those numbers a bit to get a feel for how
               <kbd>border-radius</kbd> works.
             </p>
@@ -154,7 +154,7 @@
                 <li>It needs to be placed on top of the banner image...on whichever side it looks better. For the banner image I chose it looks better on the left</li>
                 
             </ol>
-            <p>For colors we have been using hexidecimal codes.  This is not the only way to indicate color in CSS however. You can also use an RGB designation. A light grey in RGB for example would look like this: <code>rgb(240,240,240)</code>. There is also another version of the RGB method...<kbd>rgba()</kbd>. It takes 4 numbers. The last one indicates how <em>transparent</em> your color should be. It will be between 1-0. Let's use this to give our element a semi-transparent background. Make a rule using the <kbd>.action</kbd> class.</p>
+            <p>For colors we have been using hexidecimal codes.  This is not the only way to indicate color in CSS however. You can also use an RGB designation. A light grey in RGB, for example, would look like this: <code>rgb(240,240,240)</code>. There is also another version of the RGB method <kbd>rgba()</kbd>. It takes 4 numbers. The last one indicates how <em>transparent</em> your color should be. It will be between 1-0. Let's use this to give our element a semi-transparent background. Make a rule using the <kbd>.action</kbd> class.</p>
             <pre><code class="lang-css">.action {
     background-color: rgba(240, 240, 240, 0.8);
 }
@@ -242,7 +242,7 @@
             <!-- START STEP -->
             <h3 id="images">"3D" Images</h3>
             <p>
-              It is easier than you might think to give your images a '3D' treatment. Just a clever use of <code>border</code> and <code><a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank">box-shadow</a></code>.
+              It is easier than you might think to give your images a "3D" treatment. Just a clever use of <code>border</code> and <code><a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank">box-shadow</a></code>.
             </p>
             <p>Start this enhancement by adding a light grey border and some padding to your images. My images had classes of <kbd>home-left-img</kbd> and <kbd>home-right-img</kbd> so my rule looks like this:</p>
             <pre><code class="lang-css">.home-left-img,
@@ -250,7 +250,7 @@
     border: 1px solid #ccc;
     padding: 10px;
 }</code></pre>
-<p>If you check that out you will aready begin to see the illusion starting to form. One last step to complete it...add box-shadow in a darker grey.</p>
+<p>If you check that out you will aready begin to see the illusion starting to form. One last step to complete it, add box-shadow in a darker grey.</p>
 <pre><code class="lang-css">.home-left-img,
 .home-right-img {
     border: 1px solid #ccc;
