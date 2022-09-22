@@ -78,7 +78,7 @@
               directory as the HTML file (aboutme). Add the following to your
               HTML file in the <code>head</code> element.
             </p>
-            <pre><code class="language-markup">&lt;script src="about-me.js defer&gt;&lt;/script&gt;</code></pre>
+            <pre><code class="language-markup">&lt;script src="about-me.js" defer&gt;&lt;/script&gt;</code></pre>
             <p>
               This line of HTML will let the browser know that we want it to get
               the file and run an Javascript in it. To make sure it is working
@@ -155,18 +155,18 @@
 const favoriteFoods = ["Curry", "Chocolate", "Fajitas"];
 // create new P element
 const newP = document.createElement("p");
-// add the content to the paragraph. Note that + with strings is concatinate
-newP.textContent = "My Favorite foods:" + favoriteFoods;
+// add the content to the paragraph. Note that the example below uses template literal strings, we could also have used the + with strings to concatinate
+newP.textContent = `My Favorite foods:  ${favoriteFoods}`;
 // nothing will show in the browser until we add our new node (element) into the DOM
 document.body.appendChild(newP);
 // Remove the first item
 favoriteFoods.shift();
 // set the new content. Why don't we have to append it again?
-newP.textContent = "My Favorite foods2:" + favoriteFoods;
+newP.textContent = `My Favorite foods2:  ${favoriteFoods}`;
 // Add a new food to the end of the list
 favoriteFoods.push("Sourdough Bread");
-// set the content and add it to the DOM
-newP.textContent = "My Favorite foods2:" + favoriteFoods;
+// set the new content
+newP.textContent = `My Favorite foods3:  ${favoriteFoods}`;
 // What if we wanted to see all three versions of the favorite foods list? What would we need to change?
 
               </code></pre>
