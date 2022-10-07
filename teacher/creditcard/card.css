@@ -1,0 +1,77 @@
+      * {
+        box-sizing: border-box;
+        /* border: 1px dashed red; */
+      }
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+      label {
+        display: block;
+      }
+      input {
+        font-size: 16px;
+        line-height: 1.5;
+        width: 100%;
+      }
+      .card-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 25px auto 25px 35px;
+        grid-gap: 1em;
+        height: 280px;
+        width: 450px;
+        text-transform: uppercase;
+      }
+      .card-front {
+        background-color: #ddd;
+        grid-column: 1/3;
+        grid-row: 1/3;
+        border-radius: 6px;
+        box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: auto 100px;
+        gap: 1em;
+        padding: 1.5em;
+      }
+      .total {
+        align-self: center;
+      }
+      .card-image {
+        justify-self: end;
+      }
+      .card-number {
+        grid-column: 1/3;
+      }
+
+      .card-expiration input {
+        width: 45%;
+      }
+      .card-back {
+        background-color: #ddd;
+        grid-column: 2/4;
+        grid-row: 2/4;
+        border-radius: 6px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        padding: 1em 0;
+      }
+      .bar {
+        grid-column: 1/4;
+        height: 40px;
+        background-color: #444;
+      }
+      .card-cvc {
+        grid-column: 2/3;
+        align-self: end;
+      }
+      .card-cvc input {
+        width: 7ch;
+        margin: 0 1em 1em 0;
+      }
+      .submit-button {
+        grid-row: 4/5;
+        grid-column: -2;
+        
+        border-radius: 6px;
+      }
+   
