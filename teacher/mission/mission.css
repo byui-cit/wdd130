@@ -1,0 +1,55 @@
+body {
+    padding: 3em;
+    font-size: 20px;
+}
+.content {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #aaa;
+    padding: 2.5em 8em;
+}
+
+h1,h2,h3 {
+  
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+p, li, h1, h2 {
+    line-height: 1.5;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+ h2 {
+   font-size: 1rem; 
+   color: #006EB6;
+   border-bottom: 1px solid #ddd;
+   margin-bottom: 3em; 
+}
+.title {
+    text-align: center;
+}
+.does-list li {
+    margin-bottom: 1em;
+}
+
+.logo {
+    width: 150px;
+}
+footer {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark h2 {
+    color: #A0D4ED;
+}
