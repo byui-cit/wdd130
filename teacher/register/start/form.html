@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <!-- Example based off of https://www.w3docs.com/learn-html/html-form-templates.html -->
+  <head>
+    <title>Camp Registration</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <div class="testbox">
+      <h1>Camp Registration</h1>
+      <form>
+        <fieldset class="participants">
+          <legend>Participant Information</legend>
+          <section class="participant1">
+            <p>Participant 1</p>
+            <div class="item">
+              <label for="fname"> First Name<span>*</span></label>
+              <input id="fname" type="text" name="fname" value="" required />
+            </div>
+            <div class="item activities">
+              <label for="activity">Activity #<span>*</span></label>
+              <input id="activity" type="text" name="activity" />
+            </div>
+            <div class="item">
+              <label for="fee">Fee ($)<span>*</span></label>
+              <input id="fee" type="number" name="fee" />
+            </div>
+            <div class="item">
+              <label for="date">Desired Date <span>*</span></label>
+              <input id="date" type="date" name="date" />
+            </div>
+            <div class="item">
+              <p>Grade</p>
+              <select>
+                <option selected value="" disabled selected></option>
+                <option value="1">1st</option>
+                <option value="2">2nd</option>
+                <option value="3">3rd</option>
+                <option value="4">4th</option>
+                <option value="5">5th</option>
+                <option value="6">6th</option>
+                <option value="7">7th</option>
+                <option value="8">8th</option>
+                <option value="9">9th</option>
+                <option value="10">10th</option>
+                <option value="11">11th</option>
+                <option value="12">12th</option>
+              </select>
+            </div>
+          </section>
+          <button type="button" id="add">Add Participant</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Household / Adult Primary Contact</legend>
+          <div class="columns">
+            <div class="item">
+              <label for="adult_name">Name<span>*</span></label>
+              <input id="adult_name" type="text" name="adult_name" />
+            </div>
+
+            <div class="item">
+              <label for="address1">Address 1<span>*</span></label>
+              <input id="address1" type="text" name="address1" />
+            </div>
+
+            <div class="item">
+              <label for="city">City<span>*</span></label>
+              <input id="city" type="text" name="city" />
+            </div>
+            <div class="item">
+              <label for="state">State<span>*</span></label>
+              <input id="state" type="text" name="state" />
+            </div>
+            <div class="item">
+              <label for="eaddress">Email Address<span>*</span></label>
+              <input id="eaddress" type="text" name="eaddress" />
+            </div>
+            <div class="item">
+              <label for="phone">Phone<span>*</span></label>
+              <input id="phone" type="tel" name="phone" />
+            </div>
+            <div class="item">
+              <label for="zip">Zip<span>*</span></label>
+              <input id="zip" type="text" name="zip" />
+            </div>
+
+            <div class="question">
+              <label>Relationship to Participants:</label>
+              <div class="question-answer">
+                <div>
+                  <input
+                    type="radio"
+                    value="self"
+                    id="radio_3"
+                    name="relationship"
+                  />
+                  <label for="radio_3" class="radio"><span>Self</span></label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    value="mother"
+                    id="radio_4"
+                    name="relationship"
+                  />
+                  <label for="radio_4" class="radio"><span>Mother</span></label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    value="father"
+                    id="radio_5"
+                    name="relationship"
+                  />
+                  <label for="radio_5" class="radio"><span>Father</span></label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    value="guardian"
+                    id="radio_6"
+                    name="relationship"
+                  />
+                  <label for="radio_6" class="radio"
+                    ><span>Guardian</span></label
+                  >
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    value="other"
+                    id="radio_7"
+                    name="relationship"
+                  />
+                  <label for="radio_7" class="radio"><span>Other</span></label>
+                  <input type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="btn-block">
+          <button type="submit" id="submitButton">Submit</button>
+        </div>
+      </form>
+      <section id="summary"></section>
+    </div>
+  </body>
+</html>

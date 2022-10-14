@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 22px;
+  }
+
+  div,
+  form,
+  input,
+  select,
+  textarea,
+  label,
+  p {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .testbox {
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  form {
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 8px #006622;
+  }
+  fieldset {
+    margin-bottom: 2em;
+  }
+  input,
+  select,
+  textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  input {
+    width: 100%;
+    padding: 5px;
+  }
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 1em;
+  }
+  input[type="date"] {
+    padding: 4px 5px;
+  }
+  textarea {
+    width: 100%;
+    padding: 5px;
+  }
+  .item:hover p,
+  .item:hover i,
+  .question:hover p,
+  .question label:hover,
+  input:hover::placeholder {
+    color: #006622;
+  }
+  .item input:hover,
+  .item select:hover,
+  .item textarea:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px 0 #006622;
+    color: #006622;
+  }
+  .item {
+    position: relative;
+    margin: 10px 0;
+  }
+  .item span {
+    color: red;
+  }
+
+
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .columns div {
+    width: 48%;
+  }
+
+  /* Style checkbox and radio. To do this we have to hide the defaults then we create our own */
+  input[type="radio"] {
+    display: none;
+  }
+  label.radio {
+    position: relative;
+    display: inline-block;
+    margin: 5px 20px 15px 0;
+    cursor: pointer;
+  }
+  .question span {
+    margin-left: 30px;
+  }
+  .question-answer label {
+    display: block;
+  }
+  label.radio:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+  }
+  input[type="radio"]:checked + label:before,
+  label.radio:hover:before {
+    border: 2px solid #006622;
+  }
+  label.radio:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    width: 8px;
+    height: 4px;
+    border: 3px solid #006622;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+  input[type="radio"]:checked + label:after {
+    opacity: 1;
+  }
+  /* end style checkbox and radio */
+  .btn-block {
+    margin-top: 10px;
+    text-align: center;
+  }
+  button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #006622;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #00b33c;
+  }
+  @media (max-width: 568px) {
+    .columns div {
+      width: 100%;
+    }
+  }
+  

@@ -25,3 +25,38 @@ const articles = [
     stars: "⭐⭐⭐⭐"
   }
 ];
+
+const articlesElement = document.querySelector(".articles");
+function articleHTML(item) {
+  return `<section class="post-details">
+    <p class="post-details__date">${item.date}</p>
+    <p>${item.ages}</p>
+    <p>${item.genre}</p>
+    <p>${item.stars}</p>
+  </section>
+  <section class="post-content">
+    <h2>
+      <a href="#">${item.title}</a>
+    </h2>
+    <figure>
+      <img
+        src="${item.imgSrc}"
+        alt="${item.imgAlt}"
+      />
+    </figure>
+    <p>
+    ${item.description}
+      <a href="#">Read More...</a>
+    </p>
+  </section>`;
+}
+function renderArticleList(list) {
+  list.forEach((item) => {
+    const newArticle = document.createElement("article");
+    const html = articleHTML(item);
+    newArticle.innerHTML = html;
+    articlesElement.appendChild(newArticle);
+  });
+}
+
+renderArticleList(articles);
