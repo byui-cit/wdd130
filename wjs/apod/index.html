@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astromony Picture of the Day</title>
+    <link rel="stylesheet" href="apod.css" />
+    <script src="apod.js" type="module"></script>
+  </head>
+  <body>
+    <header><h1>🪐 NASA Astronomy Picture of the Day (APOD)</h1></header>
+    <main>
+      <section class="date-form">
+        <label for="requestedDate">Date</label>
+        <input type="text" id="requestedDate" placeholder="YYYY-M-D" />
+        <button id="getButton">Get Image 📡</button>
+      </section>
+      <section class="error hide"></section>
+      <section class="output"></section>
+    </main>
+    <footer>
+      Information provided by NASA through their
+      <a href="https://apod.nasa.gov/apod/astropix.html"
+        >Astromony Picture of the Day</a
+      >
+      service.
+    </footer>
+  </body>
+</html>
