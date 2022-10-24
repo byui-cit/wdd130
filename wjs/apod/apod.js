@@ -25,13 +25,19 @@ async function getApodByDate() {
   }
 }
 function showError(msg) {
+  //get the error element
   const errorElement = document.querySelector(".error");
+  //set the content of the element to the msg
   errorElement.innerHTML = msg;
+  // remove the hide class
   errorElement.classList.remove("hide");
 }
 function hideError() {
+  //get the error element
   const errorElement = document.querySelector(".error");
+  // clear out the content of the element
   errorElement.innerHTML = "";
+  // add the hide class
   errorElement.classList.add("hide");
 }
 

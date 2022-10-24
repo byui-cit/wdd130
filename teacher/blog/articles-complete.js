@@ -26,9 +26,8 @@ const articles = [
   }
 ];
 
-const articlesElement = document.querySelector(".articles");
-function articleHTML(item) {
-  return `<section class="post-details">
+function articleTemplate(item) {
+  return `<article><section class="post-details">
     <p class="post-details__date">${item.date}</p>
     <p>${item.ages}</p>
     <p>${item.genre}</p>
@@ -48,15 +47,13 @@ function articleHTML(item) {
     ${item.description}
       <a href="#">Read More...</a>
     </p>
-  </section>`;
+  </section></article>`;
 }
 function renderArticleList(list) {
-  list.forEach((item) => {
-    const newArticle = document.createElement("article");
-    const html = articleHTML(item);
-    newArticle.innerHTML = html;
-    articlesElement.appendChild(newArticle);
-  });
+  const articlesElement = document.querySelector(".articles");
+  const htmlStrings = list.map(articleTemplate);
+
+  articlesElement.innerHTML = htmlStrings.join("");
 }
 
 renderArticleList(articles);
