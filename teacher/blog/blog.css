@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lora);
 :root {
-    --gold: #EFC69B;
-    --burgundy: #AF1B3F;
-    --dark: #473144;
+  --gold: #efc69b;
+  --burgundy: #af1b3f;
+  --dark: #473144;
 }
 * {
   box-sizing: border-box;
@@ -28,67 +28,76 @@ h6 {
   font-family: Lora, Impact, serif;
 }
 
-a:link, a:visited {
-    color: var(--burgundy);
-    text-decoration: none;
+a:link,
+a:visited {
+  color: var(--burgundy);
+  text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 header > h1 {
-    padding: .6em;
-    text-align: center;
-    font-size: 2.2em;
+  padding: 0.6em;
+  text-align: center;
+  font-size: 2.2em;
 }
 nav {
-    border-top: 2px solid var(--gold);
-    border-bottom: 2px solid var(--gold);
-    
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
 }
 nav ul {
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-     justify-items: end;
-    justify-content: end; 
-    max-width: 1080px;
-    margin: auto;
-    list-style-type: none;
-    padding: 1em;
-    font-size: 1.2em;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  justify-items: end;
+  justify-content: end;
+  max-width: 1080px;
+  margin: auto;
+  list-style-type: none;
+  padding: 1em;
+  font-size: 1.2em;
 }
 
 main {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-   max-width: 1080px;
-    margin: 2em auto;
-    grid-gap: 1em;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  max-width: 1080px;
+  margin: 2em auto;
+  grid-gap: 1em;
 }
 article {
-    display: grid;
-    grid-template-columns: 240px auto;
-    margin-bottom: 2em;
+  display: grid;
+  grid-template-columns: 240px auto;
+  margin-bottom: 2em;
 }
 
 .post-details {
-    border-right: 1px solid var(--gold);
-    margin-right: 1em;
-    padding-right: 1em;
-    text-align: right;
+  border-right: 1px solid var(--gold);
+  margin-right: 1em;
+  padding-right: 1em;
+  text-align: right;
 }
 .post-details p {
-    margin: .4em 0;
+  margin: 0.4em 0;
 }
 .post-details__date {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 .post-content h2 {
-    margin-top: .1em;
+  margin-top: 0.1em;
 }
 .post-content figure {
-    text-align: center;
+  text-align: center;
 }
 .filters {
-    border: 2px solid var(--gold);
+  border: 2px solid var(--gold);
+}
+.filters p {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+input {
+  font-size: 19px;
+  /* line-height: 1.5; */
+  padding: 0.3em 0.5em;
 }
